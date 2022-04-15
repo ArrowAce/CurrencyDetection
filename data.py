@@ -13,32 +13,35 @@ import numpy as np
 camera = PiCamera()
 #camera=cv2.VideoCapture(0)
 camera.start_preview()
-count=0
-while True:
-    global img
-    ret, img=camera.capture()
+sleep(5)
+count=1
+#while True:
+#global img
+camera.capture('/home/pi/Desktop/test.jpg')
+img=read_img('/home/pi/Desktop/test.jpg')
     #gray=cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-    cv2.imshow("Test", img)
-    if not ret:
-        break
-
-    k=cv2.waitKey(1)
-    if k%256==27:
+    #cv2.imshow("Test", img)
+    #if not ret:
+     #   break
+print('photo lia')
+k=cv2.waitKey(1)
+#    if k%256==27:
        #For Esc Key
-       print("Close")
-       break
-    elif k%256==32:
+print("Close")
+#      break
+ #  elif k%256==32:
        #For Space Key
-       print("Image "+str(count)+"saved")
-       file= os.path.join(r"/home/pi/Desktop", str(count) +'.jpg')
-       cv2.imwrite(file, img)
-       count +=1
-       break
+  #     print("Image "+str(count)+"saved")
+
+#    file= os.path.join(r"/home/pi/Desktop/test.jpg")
+ #      cv2.imwrite(file, img)
+  #     count +=1
+   #    b
 #sleep(5)
 #camera.capture('test.jpg')
-#camera.stop_preview()
-camera.release
-cv2.destroyAllWindows
+camera.stop_preview()
+#camera.release
+#cv2.destroyAllWindows
 max_val = 8
 max_pt = -1
 max_kp = 0
@@ -48,13 +51,13 @@ orb = cv2.ORB_create()
 #test_img = cv2.imread(r'D:\Users\ajayshankar\Desktop\AJAY\Currency-of-VND-Recognition-master\Data\500.jpg')
 #original = resize_img(test_img, 0.4)
 original = resize_img(img, 0.4)
-display('original', original)
+#display('original', original)
 #(kp1, des1) = orb.detectAndCompute(test_img, None)
 (kp1, des1) = orb.detectAndCompute(img, None)
 #Declaring the training set
 #training_set=os.listdir(r"D:\Users\ajayshankar\Desktop\AJAY\Currency-of-VND-Recognition-master\New folder\New folder\Indian Currencies zip\Indian Currencies\10")
 #training_set=list(paths.list_images(r"D:\Users\ajayshankar\Desktop\AJAY\Currency-of-VND-Recognition-master\New folder\New folder\Indian Currencies zip\Data"))
-training_set=list(paths.list_images(r"D:\Users\ajayshankar\Desktop\AJAY\Currency Detection\New folder\New folder\Indian Currencies zip\Semi"))
+training_set=list(paths.list_images(r"/home/pi/Desktop/CurrencyDetection/Semi"))
 print(training_set,end='\n')
 #for i in range(0, len(training_set)):
 c=0
@@ -63,7 +66,7 @@ for trainingData in training_set:
 # train image
     #train_img = cv2.imread(training_set[i])
     train_img = cv2.imread(trainingData)
-    cv2.imshow("frame", train_img)
+    #cv2.imshow("frame", train_img)
     (kp2, des2) = orb.detectAndCompute(train_img, None)
 # brute force matcher
     bf = cv2.BFMatcher(cv2.NORM_HAMMING)
@@ -76,11 +79,11 @@ for trainingData in training_set:
     #plt.imshow(img3)
     #plt.show()
     good = []
-# if good then append to list of good matches 
+# if good then append to list of good matches
     for m,n in (all_matches):
         #if m.distance< 0.789*c.distance :
         #if n< len(all_matches) - 1 and m.distance < 0.789 * all_matches[n+1].distance:
-        if m.distance < 0.789 *n.distance:   
+        if m.distance < 0.789 *n.distance:
             good.append(m)
         if len(good) >max_val:
             max_val = len(good)
