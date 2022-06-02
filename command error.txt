@@ -1,0 +1,169 @@
+    5  readlink /Desktop
+    6  cd Desktop
+    7  ls
+    8  touch abc
+    9  readlink -f abc
+   10  git
+   11  ld
+   12  ls
+   13  sudo raspi-config
+   14  git clone https://github.com/ArrowAce/CurrencyDetection.git
+   15  git config --global user.name "ArrowAce"
+   16  git config --global user.email "ajayconnect99@gmail.com"
+   17  git config --l
+   18  git clone https://github.com/ArrowAce/CurrencyDetection.git
+   19  ls
+   20  cd CurrencyDetection/
+   21  ls
+   22  sudo apt install python3
+   23  pip install
+   24  pip install picamera
+   25  pip install imutils
+   26  pip install cv2
+   27  pip install opencv-python
+   28  pip install pyttsx3
+   29  pip install time
+   30  pip install sleep
+   31  pip install numpy
+   32  pip install subprocess
+   33  ls
+   34  python data.py
+   35  ls
+   36  python data.py
+   37  ls
+   38  pip install utils
+   39  python data.py
+   40  nano data.py
+   41  python data.py
+   42  pip install paths
+   43  python data.py
+   44  pip install paths
+   45  pip update
+   46  pip -m update
+   47  pip install --upgrade pip
+   48  pip install paths
+   49  sudo pip install paths
+   50  python data.py
+   51  nano data.py
+   52  python data.py
+   53  sudo pip install cv2
+   54  sudo pip install opencv-python
+   55  python data.py
+   56  sudo pip install imutils
+   57  python data.py
+   58  nano data.py
+   59  python data.py
+   60  pip install imutils
+   61  python data.py
+   62  nano data.py
+   63  python data.py
+   64  sudo apt-get install libatlas-base-dev
+   65  python data.py
+   66  pip install -U numpy
+   67  python data.py
+   68  pip install math
+   69  pip install matplotlib
+   70  pip install python-math
+   71  python data.py
+   72  nano data.py
+   73  python data.py
+   74  sudo raspi-config
+   75  python data.py
+   76  vcgencmd get_camera
+   77  sudo raspi-config
+   78  shutdown
+   79  sudo shutdown
+   80  cd Desktop/
+   81  ls
+   82  cd ..
+   83  ls
+   84  cd CurrencyDetection/
+   85  python data.py
+   86  nano data.py
+   87  python data.py
+   88  nano data.py
+   89  python data.py
+   90  nano data.py
+   91  python data.py
+   92  nano data.py
+   93  python data.py
+   94  nano data.py
+   95  python data.py
+   96  nano data.py
+   97  python data.py
+   98  nano data.py
+   99  python data.py
+  100  nano data.py
+  101  python data.py
+  102  nano data.py
+  103  python data.py
+  104  nano data.py
+  105  python data.py
+  106  nano data.py
+  107  python data.py
+  108  nano data.py
+  109  python data.py
+  110  python data.p
+  111  python data.py
+  112  nano data.py
+  113  python data.py
+  114  nano data.py
+  115  history
+  116  sudo raspi-config
+  117  python data.py
+  118  ls
+  119  cd CurrencyDetection/
+  120  ls
+  121  python data.py
+  122  sudo shutdown
+  123  ls
+  124  cd ..
+  125  ls
+  126  ls -ll
+  127  ls
+  128  cd CurrencyDetection/
+  129  ls
+  130  nano data.py
+  131  python data.py
+  132  nano data.py
+  133  python data.py
+  134  nano data.py
+  135  python data.py
+  136  nano data.py
+  137  ls
+  138  nano data.py
+  139  python data.py
+  140  sudo apt install woof
+  141  wget http://www.home.unix-ag.org/simon/woof
+  142  sudo cp woof /usr/bin/
+  143  ls
+  144  cd ..
+  145  ls
+  146  ls -ll
+  147  woof Desktop0.jpg
+  148  sudo woof Desktop0.jpg
+  149  cd CurrencyDetection/
+  150  nano data.py
+  151  woof /home/pi/Desktop0.jpg
+  152  sudo woof /home/pi/Desktop0.jpg
+  153  cp woof /usr/bin/
+  154  sudo cp woof /usr/bin/
+  155  sudo woof /home/pi/Desktop0.jpg
+  156  python data.py
+  157  sudo raspi-config
+  158  vcgencmd get_camera
+  159* raspistill -o image.j
+  160  ls
+  161  sudo apt install quickserve
+  162  sudo apt install tightvnc
+  163  sudo apt install tightvnc-server
+  164  sudo lsof -i -P -n | grep LISTEN
+  165  sudo systemctl status vncserver
+  166  sudo apt install tightvncserver
+  167  sudo lsof -i -P -n | grep LISTEN
+  168  sudo apt install real-vnc-server
+  169  sudo apt install realvncserver
+  170  sudo apt install realvnc-server
+  171  sudo raspi-config
+  172  cat data.py
+  173  history
